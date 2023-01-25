@@ -36,7 +36,7 @@ export class MessageService {
       url: `${env.api.serverUrl}/api/messages/protected`,
       method: 'GET',
       headers: {
-        'content-type': 'application/json',
+        'content-type': 'application/json'
       },
     };
 
