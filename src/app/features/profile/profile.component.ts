@@ -11,7 +11,12 @@ export class ProfileComponent {
 
   user$ = this.auth.user$;
 
+  //code$ = this.user$.pipe(map((user) => JSON.stringify(user, null, 2)));
   code$ = this.user$.pipe(map((user) => JSON.stringify(user, null, 2)));
 
   constructor(private auth: AuthService) {}
 }
+
+//"auth0|64878e3d8afd8292c1926a3e"
+//"auth0|64878e3d8afd8292c1926a3e"
+//"google-oauth2|109103851544080473329"

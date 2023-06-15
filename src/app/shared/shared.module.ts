@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { COMPONENTS } from './components';
 import { Auth0FeatureComponent } from './components/auth0-feature.component';
@@ -17,12 +18,7 @@ import { SignupButtonComponent } from './components/buttons/signup-button.compon
     LogoutButtonComponent,
     SignupButtonComponent,
   ],
-  imports: [
-    CommonModule,
-    RouterModule
-  ],
-  exports: [
-    ...COMPONENTS
-  ],
+  imports: [CommonModule, RouterModule, FormsModule],
+  exports: [...COMPONENTS],
 })
 export class SharedModule {}
